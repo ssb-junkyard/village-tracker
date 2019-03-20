@@ -1,0 +1,20 @@
+{
+  "name": "village-tracker-bot",
+  "description": "",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dominictarr/village-tracker-bot",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/village-tracker-bot.git"
+  },
+  "dependencies": {
+    "cont": "^1.0.3",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
+  "license": "MIT"
+}
