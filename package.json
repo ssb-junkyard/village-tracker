@@ -9,7 +9,10 @@
   },
   "dependencies": {
     "cont": "^1.0.3",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "rng": "^0.2.2",
+    "ssb-client": "^4.7.1",
+    "ssb-mentions": "^0.5.0"
   },
   "devDependencies": {},
   "scripts": {
