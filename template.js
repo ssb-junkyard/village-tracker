@@ -13,11 +13,11 @@ module.exports = function (opts) {
 
   var issue_text = '', module_text = ''
   if(issues && issues.length)
-    'you are assigned these issues:\n' +
-      toArray(issues).map(function (e) { return '  * ' + e + '\n' }).join('')
+    issue_text = 'you are assigned these issues:\n' +
+      toArray(issues).map(function (e) { return '  * ' + e + '\n' }).join('') + '\n\n'
   if(modules && modules.length)
     module_text = `please triage these modules, following [documentation drive checklist](${checklist}):\n` +
-      toArray(modules).map(function (e) { return '  * ' + e + '\n' }).join('')
+      toArray(modules).map(function (e) { return '  * ' + e + '\n' }).join('') + '\n'
   
   return `
 # Documentation Drive (week ${week}) [@${name}](${id})
