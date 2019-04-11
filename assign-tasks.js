@@ -3,6 +3,9 @@ var opts = require('minimist')(process.argv.slice(2))
 var cont = require('cont')
 var Mentions = require('ssb-mentions')
 
+var fs = require('fs')
+var path = require('path')
+
 if(!Number.isInteger(opts.week)) throw new Error('--week should be a number')
 var MT = new (require('rng').MT)(opts.week)
 var random = MT.random.bind(MT)
@@ -30,7 +33,11 @@ function fromList (s) {
   return s.split(/\s+/)
 }
 
-var names_ordered = fromCSV(opts.names)
+function read (name) {
+  return fs.readFileSync(opts[name] || path.join(__dirname, name+'.csv'), 'utf8')
+}
+
+var names_ordered = fromCSV(read('names'))
 var names = {}
 shuffel(Object.keys(names_ordered)).forEach(function (name) {
   names[name] = names_ordered[name]
@@ -39,8 +46,8 @@ shuffel(Object.keys(names_ordered)).forEach(function (name) {
 
 var num = Object.keys(names).length
 
-var issues = shuffel(fromList(opts.issues))
-var modules = shuffel(fromList(opts.modules))
+var issues = shuffel(fromList(read('issues')))
+var modules = shuffel(fromList(read('modules')))
 
 function getPer (list, num) {
   return Math.floor((list && list.length || 0) / num) || 1
@@ -99,12 +106,4 @@ require('ssb-client')(function (err, sbot) {
   })
 
 })
-
-
-
-
-
-
-
-
 
