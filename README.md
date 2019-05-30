@@ -40,6 +40,9 @@ If you see room for improvement, either make a PR for that improvement, or post 
 
 Remember to put your results into the village tracker form and post a reply about how it went!
 
+To learn more about the documentation drive,
+see documentation at [village-tracker repo](https://github.com/ssbc/village-tracker)
+
 ## spreadsheets
 
 * [village tracker spreadsheet](https://docs.google.com/spreadsheets/d/1OCn7FhtiQMUn_MZpF1G_Al7jpueudBBTbA5biMxRos0/edit#gid=0)
