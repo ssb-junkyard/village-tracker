@@ -21,7 +21,7 @@ For extra points, make a PR to add your name and ssb id to the `names.csv`
 
 you will get assigned one or more issues and modules.
 
-An _issue- describes what needs to be done.
+An _issue_ describes what needs to be done.
 If you get a _module_ take a look at it and think about how it might
 be improved:
 
@@ -65,9 +65,9 @@ node assign-tasks.js --week N --checklist <msg_id>
 
 ### ending the week
 
-update [the spreadsheet]([village tracker spreadsheet](https://docs.google.com/spreadsheets/d/1OCn7FhtiQMUn_MZpF1G_Al7jpueudBBTbA5biMxRos0/edit#gid=0)
-* )
-in the first tab is the "form responses" copy this over to the "commitments" tab.
+update [the spreadsheet](https://docs.google.com/spreadsheets/d/1OCn7FhtiQMUn_MZpF1G_Al7jpueudBBTbA5biMxRos0/edit#gid=0)
+
+- in the first tab is the "form responses" copy this over to the "commitments" tab.
 Move triaged modules out of the untriaged section, and update modules.csv (in this repo)
 make sure `names.csv` is up to date if people have joined or left, and `issues.csv` is
 up to date if issues have been opened or closed.
